@@ -1,0 +1,95 @@
+There are three way to initalize a variable
+
+intialization
+int x = 0;
+
+constructor intaliziation 
+int x (0);
+
+uniform intialization
+int x {0};
+
+strings are variables of this type which are able to store sequences of characters, such as words ofr sentences
+#inclue <strng>
+This is the library identifier
+
+string mystring = "This is a string";
+string mystring ("This is a string");
+string mystring {"This is a string"};
+
+string mystring;
+my string = "This is an string";
+
+constants are expressions with a fixed value
+
+Literals are the most obvious kind of constants. They are used to express particular values within the source code of a 
+program. We have already used some in previous chapters to give specific values to variables or to express messages
+
+Literal constants can be classified into: integer, floating-point, characters, strings, Boolean, pointers, 
+and user-defined literals.
+
+
+75         // int
+75u        // unsigned int
+75l        // long
+75ul       // unsigned long 
+75lu       // unsigned long 
+
+
+Character and string literals can also represent special characters that are difficult or impossible to express otherwise in the source code of a program, like newline (\n) or tab (\t). These special characters are all of them preceded by a backslash character (\).
+
+Here you have a list of the single character escape codes:
+
+Escape code	Description
+\n	newline
+\r	carriage return
+\t	tab
+\v	vertical tab
+\b	backspace
+\f	form feed (page feed)
+\a	alert (beep)
+\'	single quote (')
+\"	double quote (")
+\?	question mark (?)
+\\	backslash (\)
+
+For example:
+
+'\n'
+'\t'
+"Left \t Right"
+"one\ntwo\nthree"
+
+Internally, computers represent characters as numerical codes: most typically, they use one extension of the ASCII character encoding system (see ASCII code for more info). Characters can also be represented in literals using its numerical code by writing a backslash character (\) followed by the code expressed as an octal (base-8) or hexadecimal (base-16) number. For an octal value, the backslash is followed directly by the digits; while for hexadecimal, an x character is inserted between the backslash and the hexadecimal digits themselves (for example: \x20 or \x4A).
+
+Several string literals can be concatenated to form a single string literal simply by separating them by one or more blank spaces, including tabs, newlines, and other valid blank characters. For example:
+
+1
+2
+"this forms" "a single"     " string "
+"of characters"
+
+
+The above is a string literal equivalent to:
+
+ 
+"this formsa single string of characters"
+
+
+Note how spaces within the quotes are part of the literal, while those outside them are not.
+
+Some programmers also use a trick to include long string literals in multiple lines: 
+In C++, a backslash (\) at the end of line is considered a line-continuation character that merges both that line and
+ the next into a single line. Therefore the following code:
+
+1
+2
+x = "string expressed in \
+two lines"
+
+
+is equivalent to:
+
+ 
+x = "string expressed in two lines"
+
