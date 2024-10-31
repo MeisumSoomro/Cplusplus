@@ -1,0 +1,338 @@
+C++ supports OOP which includes its four major pillars used in C++
+
+Inheritance, 	polymorphism
+Encapsulation, 	Abstraction
+
+
+C++ is divided into three imprtant parts
+
+Core library that includes	data types,variables and literals etc
+
+standard library includes the set of functions manipulating strings, fils etc
+
+standard template library (STL) includes the set of methods manipulating a data structure
+
+
+I/O library header files includes
+	iostream, iomanip, fstream
+
+******************************************
+
+		Input and Output
+
+cout	send  the formatted output to standard output devices such as the screen
+	<< (double less then sign) operator after writing cout to show the output on display
+
+iostream	is the header that allows to display output
+
+cout 	object is defined inside the std namespace
+	if we dont use the 	namespace std,	we use		std::cout <<
+on every statement
+
+every C++ program starts with a 	int main() function as the execution begins from the start of the main function
+
+cout is an object that prints the string inside the quotation marks followed by the << operator
+
+return 0: 	is the exit status of the main function which end the statement
+	However, the statement is not madatory
+
+endl	with an L, end line is used to insert a new line and end the current line
+	<< operator can be used more than once if we want to print different variables, strings and so on in an single statement
+	cout << "character:" << ch << endl
+
+********************************************
+
+		Variables
+
+A variable is a container or (storage area) also can be defined as a name of memory location which holds or is used to storedata.
+
+The value of an variable can be changed, hence the name is variable and can be reused multiple times.
+
+it is used to represent memory location through symbol so that it can be easily defined.
+
+To indicate the storage area, each variable should be given a unique name ( identifier )
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+If 	int age = 14
+age is an variable with integer being an data which has a integer value assigned to it.
+	The int data type suggests that the variable can only hold integers
+
+We can use the data type 	double
+if we have to store documents and exponentials.
+
+Its rules include not naming it any keyword, or data types that is used to denote integers and cannot being with an number.
+	It can only include numbers,Alphabets and underscore.
+It should have complete meaningful names to easily understand it
+
+****************************************
+
+		Literals
+
+Literals are data used for representing fixed values mostly asscoiated with numbers
+
+An integer is a numeric literal without any fractional exponent. Types of integer literal are decimal, Octal and Hexadecimal
+	In C++ octal starts with a 0 and hexa starts with 0x
+
+Floating point literal is a numeric literal that has either a fractional form or a exponent form
+	0.0000234, 0.22E-5
+
+character literal is created by enclosing a single character inside quotations marks
+	'a', '2', '}'
+
+Escape sequences are sprecial or necessary characters that cannot be types	
+	newline, tab, question mark
+
+string literal is a sequence of characters enclosed in double quotation marks
+
+**************************************
+
+		 Constants
+
+Constants is when we can create variables whose values connot be changed with the keyword 	const
+	const int LIGHT-SPEED = 2.999
+	
+we have used the keyword const to declare a constant named which we cannot change its value as it will give us an error
+
+// single line comment
+/* multi line comment */
+
+********************************************
+
+		Data Types
+
+data types are declarations for variables which determines the type and size of the data associated with variables
+	it specifies the type of data that a variable can store	
+
+types include basic, derived, enumeration and user defined
+
+- - - - - - - - - - - - - - - - - - - - - - 
+
+Basic data types include	int, float, char, float, double etc
+	its memory size may change according to it type from 32 to 64
+
+int keyword is used to indicate integers
+its size is usually 4 bytes whixh can store -2147384648 or 2147483647
+
+the float and double keyword are used to store floating point numbers which include decimals and exponents
+	The size of float is 4 bytes and and fouble has 8 bytes
+
+char keyword is used for characters with 1 byte size and are enclosed in single quotations
+	An integer value is stored in the char variable rather than the character itself
+
+wchar_t character is simlar to the char data type except is byte is 2 instead of 1
+
+it is used to represent characters that require more memory to represent then the single char
+	There are also two other fixed-size character types char16_t and char32_t introduced in C++11.
+
+The bool data type has one of the two possible values 	true or false
+	they are used in conditional statements and loops
+
+The void keyword indicates an absence of data which means nothing or no value which usage comes in pointers and functions
+
+The type modifers include	signed, unsigned, short and long
+which is used by further modifying some of the fundamental data types by using these type modifiers.
+	we can modify the following data types with the modifiers given above
+	iny, double, float
+
+Data types that are derived from fundamental data types are dervied types
+	arrays, pointer, functions types, structures etc
+
+
+********************************************
+
+		Identifiers
+
+Identifiers are used to refer to th name of the variable, function, arrays or any other user defined data type
+	They are the basic requirement in an any language to identify the essential elements
+
+
+Types incdlue
+	Constants, variables, Function, Labels, Defined data types
+
+
+Identifiers cannot be used as keywords due to conflicts amongst each other
+	but it is reccomended that keyowrds should be used as indentifiers
+	
+	Always use a consiistent way to name the identifiers so the code is readable and maintainable
+
+- - - - - - - - - - - - - - - - - - - - - - 
+
+	A keyword is a reserved word which you cannot use as a variable or a constant name	 
+	as they have a special meaning to the compiler
+
+They are reserved for a special purpose and are pre-defined words already known by the compiler 
+
+********************************************
+		Operators
+
+An Operator is a type of symbol used to perform operations
+
+	types include
+Arithmetic, Relational, Logical, Bitwise, Assignment, Unary, Ternary or Conditional, and misc
+
+
+********************************************
+
+		Ternary operators
+
+the ternary operator is also known as the conditional operator can be used to replace ifelse statements in certain scenarios
+
+it evaluates the test condition and executes a block of code on the reult of the condition
+
+syntax
+	condition ? expression1 : expression2;
+
+if condition is true it evaluates expression 1 to be executed and if false then expression2 is executed
+
+takes 3 operands hence the name
+
+it is used to make code cleaner and simpler to understand and execcute
+
+it is also possible to use the ternary operators inside another ternary operator called the nested ternary operator
+
+********************************************
+
+		Type Conversions
+
+C++ type conversion allows to convert data of one type to another and the types include
+	implicit conversion and explicit conversion (also known as type casting)
+
+in implicit type the conversion is done automatically by the compiler 
+	which can be known as automatic conversion
+
+the value in int is automatically converted to double by the compiler before it is assigned to the num_double variable
+
+in explicit conversation when the user changes data manually from one type to another
+the three major ways to do it are 	cast notation, function notation (type-casting), and and type conversion operators
+
+syntax
+	(data_type)expression;
+	num_double = (double)num_int;
+
+C++ also has four operators for type conversions and are known as type conversion operators
+
+********************************************
+		Expression
+
+Expression consists of Operators, constants,and variables which are arranged according to the rules of the language
+	
+	It can also contain the function calls which return value
+
+
+An expression can consist of of one or more operands, zero or more operators to compute a value.
+	Every expression produces a value which is assigned to the variable with the help of an assignment operator
+
+
+Types of expression include
+	constant, integral, float, pointer, relational, logical, bitwise and sprecial assignemnt
+
+
+********************************************
+		C++ Control statement
+
+If else
+switch
+for loop
+while loop
+do-while
+break statement
+continue statement
+goto statement
+comments
+
+********************************************
+
+		FUNCTIONS
+
+the function is also known as a procedure or subroutine
+	we create functions to perform any task. It can be called many times and provides modularity and code reusability and Optimization
+
+
+A function is a set of statements that takes inputs to some specific computation to prodce output
+
+The idea is to put a commonly or repeatedly task that is done together and make a function so tha instead of writing the same code again and again for different inputs, we can call the function
+
+
+types of functions are library and user-defined
+
+library ones are pre-defined in header files such as
+	cell(x), cose(x), exp(x)
+
+used defined are created by ourselves so that we can use it multiple times
+	to reduce complecity of big programs and optimize the code
+
+
+syntax of creating function
+
+return_type function_name(data_type parameter...) {
+// code to be executed
+}
+
+- - - - - - - - - - - - - - - - - - - - - - 
+
+there are two ways to pass value to an function
+	call by value
+	call by reference
+
+The original value is not modified in call by value, but modified in call by reference
+
+In call by value, value being passed to the function that is locally stored by the function parameter. If you change the value of function parameter, it is changed for the current function only. It will not change the value of variable inside the caller method such as main().
+
+
+In call by reference, original value is modified because we pass reference (address).
+
+Here, address of the value is passed in the function, so actual and formal arguments share the same address space. Hence, value changed inside the function, is reflected inside as well as outside the function.
+
+--------------------------------------------------------------------------------------------------
+
+		Classes and Objects
+
+Attributes and methods are basically variables and functions that belong to the class and are often referred as the "class members".
+
+class is an user defined data type, which works as an Object constructor or a "blueprint" for creating objectss
+
+An object is created from a class after declaring its user-defined data type
+	. dot syntax is defined on the object to access the class attributes
+
+
+Methods are functions belonging to the class which can be defined by Inside and outside class definition of an function by class definition.
+
+--------------------------------------------------------------------------------------------------
+
+		Constructors
+
+Constructor is an special method which is automatically called when an object of an class is created.
+
+A constructor is created when
+	same name as the class, followed by parentheses 	():
+
+The construct always as the name as the class, always remain in the puublix specifier and has no return value
+
+
+		Constructor Parameters
+
+Constructors also take parameters, kust like regular functions which can be useful for setting initital values ofr attributes.
+
+--------------------------------------------------------------------------------------------------
+
+			Access Specifiers
+
+Access Specifiers define how the memebers (attributes and methods) of a class can be accesssed.
+
+The Public keyword is an Access specifier which can be accesssed and modfiied from outside its code.
+
+
+In C++, there are three access specifiers:
+
+public - members are accessible from outside the class
+
+private - members cannot be accessed (or viewed) from outside the class
+
+protected - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. 
+
+
+
+	It is possible to access private members of a class using a public method inside the same class. See the next chapter (Encapsulation) on how to do this.
+
+It is considered good practice to declare your class attributes as private (as often as you can). This will reduce the possibility of yourself (or others) to mess up the code. This is also the main ingredient of the Encapsulation concept,

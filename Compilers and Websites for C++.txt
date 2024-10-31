@@ -1,0 +1,26 @@
+Codeblocks
+dev c++
+VSC 
+
+cplusplus.com
+w3schools.com
+
+cppforschool
+https://simulator.dev/
+
+
+C++ projects with source code
+https://www.codewithc.com/c-projects-with-source-code/
+https://projectsgeek.com/2014/10/c-projects-source-code.html
+https://www.cppbuzz.com/projects/c++/download-c++-projects
+https://itsourcecode.com/topics/free-projects/cplusplus-projects/
+https://itsourcecode.com/free-projects/cplusplus-projects/rock-paper-scissors-using-c-functions-with-source-code/
+https://www.codeboks.com/c-projects-for-beginners-with-source-code/
+https://learnprogramo.com/25-best-c-projects-for-class-12th-engineering-with-source-code/
+https://www.dunebook.com/c-project-ideas-for-beginners/
+
+
+
+1000 C++ projects 
+https://1000projects.org/projects/c-projects-2
+https://www.couponxoo.com/1000-projects-in-c-with-source-code
